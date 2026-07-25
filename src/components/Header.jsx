@@ -32,7 +32,7 @@ export default function Header() {
           <a href="#como-funciona" onClick={fechar}>Como Funciona</a>
           <a href="#planos" onClick={fechar}>Planos</a>
         </div>
-        <a href="#planos" className="nav-cta" onClick={fechar}>Quero meus resultados</a>
+        <a href="#planos" className="nav-cta" onClick={fechar}>Quero começar</a>
         <button
           className={`nav-toggle${aberto ? ' open' : ''}`}
           onClick={() => setAberto((v) => !v)}

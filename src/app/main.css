@@ -141,8 +141,20 @@ section{padding:110px 0;}
 .sec-head p{color:var(--steel); font-size:16px; margin-top:18px; line-height:1.6;}
 
 /* SOBRE */
-.sobre-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:72px; align-items:start;}
-.sobre-tags{display:flex; flex-direction:column; gap:12px; margin-top:8px;}
+.sobre-grid{display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:start;}
+.sobre-left{display:flex; flex-direction:column; gap:28px;}
+.sobre-photo{
+  border-radius:20px; overflow:hidden; border:1px solid var(--card-border);
+  aspect-ratio:4/5; background:var(--card-bg); max-width:280px; width:100%;
+  transition:transform 0.4s var(--ease), border-color 0.3s, box-shadow 0.4s;
+}
+.sobre-photo img{width:100%; height:100%; object-fit:cover; display:block;}
+.sobre-photo:hover{
+  transform:translateY(-6px) scale(1.02);
+  border-color:var(--gold-bright);
+  box-shadow:0 18px 50px rgba(0,0,0,0.45);
+}
+.sobre-tags{display:flex; flex-direction:column; gap:12px; margin-top:0;}
 .sobre-tag{
   font-family:'Space Mono', monospace; font-size:12px; color:var(--bone);
   border:1px solid var(--steel-dim); padding:10px 14px; border-radius:var(--radius);
@@ -156,7 +168,7 @@ section{padding:110px 0;}
 .sobre-copy strong{color:var(--bone); font-weight:600;}
 
 /* COMO FUNCIONA */
-.passos{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.passos{display:grid; grid-template-columns:repeat(4,1fr); gap:24px;}
 .passo{
   background:var(--card-bg); padding:40px 32px; border-radius:var(--radius);
   border:1px solid var(--card-border); position:relative; overflow:hidden;

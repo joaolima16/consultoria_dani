@@ -1,7 +1,7 @@
 const metrics = [
-  { num: '500+', label: 'alunos ativos' },
-  { num: '10+', label: 'anos de palco' },
-  { num: '100%', label: 'individualizado' },
+  { num: '+300', label: 'alunos acompanhados' },
+  { num: '+8', label: 'anos de experiência' },
+  { num: '100%', label: 'Acompanhamento personalizado' },
 ]
 
 export default function Hero() {
@@ -9,10 +9,10 @@ export default function Hero() {
     <section id="inicio" className="hero">
       <div className="wrap">
         <div className="hero-eyebrow">Consultoria presencial &amp; online</div>
-        <h1>Transforme seu corpo com a <em>experiência</em> de um fisiculturista.</h1>
-        <p className="hero-sub">Chega de treinos genéricos. Entre para o Team Siqueira e receba um planejamento 100% individualizado — presencial ou com acompanhamento online via chat.</p>
+        <h1>Resultados reais começam com a <em>Estratégia certa</em></h1>
+        <p className="hero-sub">reinamento personalizado baseado em ciência, experiência prática e na vivência de quem alcançou a alta performance, sempre respeitando a individualidade de cada aluno.</p>
         <div className="hero-actions">
-          <a href="#planos" className="btn-primary">Quero meus resultados</a>
+          <a href="#planos" className="btn-primary">Quero começar</a>
           <a href="#sobre" className="hero-metric-link">conheça o método ↓</a>
         </div>
         <div className="hero-metrics">

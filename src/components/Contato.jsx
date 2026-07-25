@@ -41,7 +41,7 @@ export default function Contato({ planoSelecionado }) {
           <div className="contato-canais">
             <div className="canal"><span className="canal-label">WhatsApp</span><a className="canal-valor" href={montarLinkWhatsapp('Olá! Gostaria de saber mais sobre a consultoria do Team Siqueira.')}>(11) 91090-1120</a></div>
             <div className="canal"><span className="canal-label">E-mail</span><a className="canal-valor" href="#">contato@teamsiqueira.com</a></div>
-            <div className="canal"><span className="canal-label">Instagram</span><a className="canal-valor" href="#">@teamsiqueira</a></div>
+            <div className="canal"><span className="canal-label">Instagram</span><a className="canal-valor" href="https://www.instagram.com/siqueirafisic/" target="_blank" rel="noopener noreferrer">@siqueirafisic</a></div>
           </div>
         </div>
 
