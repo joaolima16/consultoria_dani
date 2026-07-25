@@ -10,6 +10,7 @@ export const metadata = {
   description:
     'Consultoria fitness online e presencial do fisiculturista Daniel Siqueira. Treinos 100% individualizados, acompanhamento real e resultados que aparecem.',
   robots: { index: true, follow: true },
+  icons: { icon: '/file.png', apple: '/file.png' },
 }
 
 export default function RootLayout({ children }) {

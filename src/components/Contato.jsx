@@ -39,7 +39,7 @@ export default function Contato({ planoSelecionado }) {
           <h2>Comece sua transformação</h2>
           <p>Preencha o formulário ou chame direto pelos canais abaixo. A avaliação inicial é sem compromisso.</p>
           <div className="contato-canais">
-            <div className="canal"><span className="canal-label">WhatsApp</span><a className="canal-valor" href={montarLinkWhatsapp('Olá! Gostaria de saber mais sobre a consultoria do Team Siqueira.')}>(11) 90000-0000</a></div>
+            <div className="canal"><span className="canal-label">WhatsApp</span><a className="canal-valor" href={montarLinkWhatsapp('Olá! Gostaria de saber mais sobre a consultoria do Team Siqueira.')}>(11) 91090-1120</a></div>
             <div className="canal"><span className="canal-label">E-mail</span><a className="canal-valor" href="#">contato@teamsiqueira.com</a></div>
             <div className="canal"><span className="canal-label">Instagram</span><a className="canal-valor" href="#">@teamsiqueira</a></div>
           </div>
