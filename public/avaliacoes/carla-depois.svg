@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-label="DEPOIS - Carla">
+  <rect width="600" height="400" fill="#17140f"/>
+  <rect x="0" y="0" width="600" height="44" fill="#3b5bdb"/>
+  <text x="24" y="29" font-family="'Space Mono', monospace" font-size="16" font-weight="700" letter-spacing="2" fill="#0d0c0a">DEPOIS</text>
+  <text x="576" y="29" text-anchor="end" font-family="'Bebas Neue', sans-serif" font-size="26" letter-spacing="2" fill="#0d0c0a">Carla</text>
+  <circle cx="300" cy="148" r="42" fill="#2e5a8a"/>
+<path d="M300 190 C256 190 224 232 224 292 L224 360 L260 360 L270 300 L300 318 L330 300 L340 360 L376 360 L376 292 C376 232 344 190 300 190 Z" fill="#1e3a8a"/>
+<text x="300" y="156" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="700" fill="#3b5bdb">C</text>
+  <text x="300" y="380" text-anchor="middle" font-family="'Space Mono', monospace" font-size="11" letter-spacing="3" fill="#46423a">TEAM SIQUEIRA</text>
+</svg>
