@@ -313,6 +313,8 @@ footer a:hover{border-color:var(--gold-bright);}
   .wrap{padding:0 28px;}
   .sobre-grid{gap:48px;}
   .contato-grid{gap:56px;}
+  .planos-grid{grid-template-columns:1fr; max-width:520px; gap:20px;}
+  .plano{padding:40px 32px;}
   section{padding:90px 0;}
 }
 
@@ -352,6 +354,8 @@ footer a:hover{border-color:var(--gold-bright);}
   .hm-num{font-size:24px;}
   .passo, .depo, .plano{padding:32px 24px;}
   .plano-preco{font-size:42px;}
+  .plano-btn{padding:13px; font-size:12px;}
+  .planos-grid{gap:16px;}
   .sec-head{margin-bottom:44px;}
   footer{flex-direction:column; text-align:center; gap:12px; padding:40px 24px;}
 }
