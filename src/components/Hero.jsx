@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="wrap">
         <div className="hero-eyebrow">Consultoria presencial &amp; online</div>
         <h1>Resultados reais começam com a <em>Estratégia certa</em></h1>
-        <p className="hero-sub">reinamento personalizado baseado em ciência, experiência prática e na vivência de quem alcançou a alta performance, sempre respeitando a individualidade de cada aluno.</p>
+        <p className="hero-sub">Treinamento personalizado baseado em ciência, experiência prática e na vivência de quem alcançou a alta performance, sempre respeitando a individualidade de cada aluno.</p>
         <div className="hero-actions">
           <a href="#planos" className="btn-primary">Quero começar</a>
           <a href="#sobre" className="hero-metric-link">conheça o método ↓</a>

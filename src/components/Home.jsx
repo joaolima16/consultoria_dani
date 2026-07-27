@@ -3,7 +3,6 @@
 import { useState } from 'react'
 import Header from '@/components/Header.jsx'
 import Hero from '@/components/Hero.jsx'
-import Scorecard from '@/components/Scorecard.jsx'
 import Sobre from '@/components/Sobre.jsx'
 import ComoFunciona from '@/components/ComoFunciona.jsx'
 import Depoimentos from '@/components/Depoimentos.jsx'
@@ -18,10 +17,8 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <Scorecard />
       <Sobre />
       <ComoFunciona />
-      <Scorecard />
       <Depoimentos />
       <Planos onEscolherPlano={setPlanoSelecionado} />
       <Contato planoSelecionado={planoSelecionado} />

@@ -82,24 +82,6 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between;}
 .nav-toggle.open span:nth-child(2){opacity:0;}
 .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
-/* SCORECARD DIVIDER (signature element — inspired by posing-round judging cards) */
-.scorecard{
-  width:100%; padding:36px 0;
-  display:flex; justify-content:center;
-}
-.scorecard-inner{
-  display:flex; align-items:center; gap:6px;
-}
-.scorecard-seg{
-  width:26px; height:8px; background:var(--steel-dim); border-radius:1px;
-  transition:background 0.3s;
-}
-.scorecard-seg.lit{background:var(--gold); box-shadow:0 0 10px rgba(30,58,138,0.6);}
-.scorecard-label{
-  font-family:'Space Mono', monospace; font-size:11px; color:var(--steel);
-  letter-spacing:0.15em; text-transform:uppercase; margin:0 18px;
-}
-
 /* HERO */
 .hero{
   min-height:100vh; display:flex; flex-direction:column; justify-content:center;
@@ -338,7 +320,6 @@ footer a:hover{border-color:var(--gold-bright);}
   .depo-grid{grid-template-columns:1fr;}
   .contato-grid{grid-template-columns:1fr; gap:48px;}
   section{padding:76px 0;}
-  .scorecard-label{display:none;}
 }
 
 /* RESPONSIVE — SMALL MOBILE */
