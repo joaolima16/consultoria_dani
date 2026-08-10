@@ -5,7 +5,7 @@ import { montarLinkWhatsapp } from '@/lib/whatsapp.js'
 
 export default function Contato({ planoSelecionado }) {
   const [form, setForm] = useState({ nome: '', email: '', mensagem: '' })
-  const [plano, setPlano] = useState(planoSelecionado || 'Plano Premium')
+  const [plano, setPlano] = useState(planoSelecionado || 'Plano Bronze 🥉' || 'Plano Silver🥈' || 'Plano Gold🥇')
   const [enviado, setEnviado] = useState(false)
 
   function handleChange(e) {
@@ -62,9 +62,9 @@ export default function Contato({ planoSelecionado }) {
             <div className="campo">
               <label htmlFor="plano">Plano de interesse</label>
               <select id="plano" value={plano} onChange={handleChange}>
-                <option>Plano Padrão</option>
-                <option>Plano Premium</option>
-                <option>Ainda não sei</option>
+                <option>Plano Bronze 🥉</option>
+                <option>Plano Prata 🥈</option>
+                <option>Plano Ouro 🥇</option>
               </select>
             </div>
             <div className="campo">

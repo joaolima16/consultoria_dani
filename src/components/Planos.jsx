@@ -3,30 +3,44 @@ import { montarLinkWhatsapp } from '@/lib/whatsapp.js'
 const planos = [
   {
     id: 'padrao',
-    nome: 'Plano Padrão',
+    nome: 'Plano Bronze 🥉',
     tipo: 'Consultoria',
     preco: 149,
     desc: 'Foco total em treino individualizado.',
+    periodo: 'Masculino(6 semanas) /  Feminino (7 semanas)',
     itens: [
-      'Avaliação inicial completa (anamnese)',
-      'Montagem de treino individualizado',
-      'Acesso ao app com vídeos explicativos',
-      'Ajuste mensal de treino',
+      'Avaliação inicial',
+      'Treino individualizado',
+      'Suporte direto via WhatsApp',
+      '1 Montagem de treino',
     ],
   },
   {
     id: 'premium',
-    nome: 'Plano Premium',
+    nome: 'Plano Silver 🥈',
     tipo: 'Consultoria VIP',
-    destaque: true,
     preco: 249,
     desc: 'Acompanhamento próximo e correção de execução.',
+    periodo: 'Masculino(12 Semanas) /  Feminino (14 Semanas)',
     itens: [
-      'Tudo do Plano Padrão',
-      'Suporte prioritário no WhatsApp',
-      'Análise de vídeos de execução',
-      'Correção de postura personalizada',
-      'Ajustes quinzenais de treino',
+      'Tudo do Plano Bronze',
+      'Suporte via WhatsApp com respostas rápidas',
+      '2 Montagens de treino',
+    ],
+  },
+  {
+    id: 'Vip Premium',
+    nome: 'Plano Gold 🥇',
+    tipo: 'Consultoria VIP Dedicada ',
+    destaque: true,
+    preco: 349,
+    desc: 'Acompanhamento próximo e correção de execução.',
+    periodo: 'Masculino(18 Semanas) /  Feminino (21 Semanas)',
+    itens: [
+      'Tudo do Plano Silver',
+      'Suporte via WhatsApp com respostas rápidas',
+      '3 Montagens de treino',
+      'Periodo de acompanhamento estendido',
     ],
   },
 ]
@@ -38,7 +52,7 @@ export default function Planos({ onEscolherPlano }) {
         <div className="sec-head">
           <div className="sec-label">Planos</div>
           <h2>Escolha o seu nível de compromisso</h2>
-          <p>Dois caminhos. Um objetivo: resultado real e sustentável.</p>
+          <p>Três caminhos. Um objetivo: resultado real e sustentável.</p>
         </div>
         <div className="planos-grid">
           {planos.map((p) => (
@@ -46,6 +60,7 @@ export default function Planos({ onEscolherPlano }) {
               {p.destaque && <div className="plano-tag">Mais recomendado</div>}
               <div className="plano-nome">{p.tipo}</div>
               <div className="plano-tipo">{p.nome}</div>
+              <div className="plano-periodo">{p.periodo}</div>
               <div className="plano-preco">R$ {p.preco}<span>/mês</span></div>
               <ul className="plano-lista">
                 {p.itens.map((item) => <li key={item}>{item}</li>)}

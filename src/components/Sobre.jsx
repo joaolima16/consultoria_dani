@@ -4,7 +4,7 @@ export default function Sobre() {
       <div className="wrap sobre-grid">
         <div className="sobre-left">
           <div className="sobre-photo">
-            <img src="/file.png" alt="Personal trainer" />
+            <img src="/assets/dani.jpeg" alt="Personal trainer" />
           </div>
           <div className="sobre-tags">
             <div className="sobre-tag">Atendimento presencial</div>
