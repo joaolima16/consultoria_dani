@@ -42,12 +42,13 @@ export default function BeforeAfter({ antes, depois, nome }) {
       aria-valuemin={0}
       aria-valuemax={100}
     >
-      <img className="ba-img ba-depois" src={depois} alt={`Depois - ${nome}`} draggable={false} />
+      <img className="ba-img ba-depois" src={depois} alt={`Depois - ${nome}`} draggable={false} loading="lazy" />
       <img
         className="ba-img ba-antes"
         src={antes}
         alt={`Antes - ${nome}`}
         draggable={false}
+        loading="lazy"
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
       />
       <span className="ba-tag ba-tag-antes">Antes</span>

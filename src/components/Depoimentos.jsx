@@ -1,65 +1,10 @@
+import Link from 'next/link'
 import BeforeAfter from '@/components/BeforeAfter.jsx'
-
-const depoimentos = [
-  {
-    iniciais: 'T',
-    nome: 'Taina Vilela',
-    resultado: '-56kg em 12 meses',
-    quote: 'Nunca tinha conseguido resultado assim. O treino faz total sentido pra minha rotina de pai e trabalho.',
-    fotoAntes: 'assets/avaliacoes/taina_antes.jpg',
-    fotoDepois: 'assets/avaliacoes/taina_depois.jpg',
-  },
-  {
-    iniciais: 'B',
-    nome: 'Bianca',
-    resultado: '-10kg em 3 meses',
-    quote: 'Comecei achando que era pra homens. Hoje sou outra pessoa, mais forte, mais confiante.',
-    fotoAntes: 'assets/avaliacoes/bianca_antes.jpeg',
-    fotoDepois: 'assets/avaliacoes/bianca_depois.jpeg',
-  },
-  {
-    iniciais: 'J',
-    nome: 'Junior Pedroso',
-    resultado: '-20kg em 6 meses',
-    quote: 'O Siqueira sabe o que é subir no palco. Cada detalhe da preparação foi cirúrgico.',
-    fotoAntes: 'assets/avaliacoes/junior_antes.jpeg',
-    fotoDepois: 'assets/avaliacoes/junior_depois.jpeg',
-  },
-  {
-    iniciais: 'T',
-    nome: 'Tainara Amianti',
-    resultado: '-31kg',
-    quote: 'Já tinha tentado de tudo e nada funcionava. Com o acompanhamento certo, finalmente vi o ponteiro da balança mudar de verdade.',
-    fotoAntes: 'assets/avaliacoes/tainara_antes.jpeg',
-    fotoDepois: 'assets/avaliacoes/tainara_depois.jpeg',
-  },
-  {
-    iniciais: 'T',
-    nome: 'Tamiris Cezarani',
-    resultado: '-25kg',
-    quote: 'O que mais mudou foi minha cabeça. Aprendi a comer bem e a treinar com propósito, não só correndo atrás de número.',
-    fotoAntes: 'assets/avaliacoes/tamiris_antes.jpeg',
-    fotoDepois: 'assets/avaliacoes/tamiris_depois.jpeg',
-  },
-  {
-    iniciais: 'L',
-    nome: 'Lucineia Borges',
-    resultado: '-14kg',
-    quote: 'Depois dos 40 achei que não ia conseguir mais. O acompanhamento próximo fez toda diferença para eu manter a consistência.',
-    fotoAntes: 'assets/avaliacoes/lucineia_antes.jpeg',
-    fotoDepois: 'assets/avaliacoes/lucineia_depois.jpeg',
-  },
-  {
-    iniciais: 'R',
-    nome: 'Ronaldo',
-    resultado: '-10kg',
-    quote: 'Trabalho o dia inteiro sentado e achava que não tinha jeito. O treino foi ajustado à minha rotina e o resultado veio rápido.',
-    fotoAntes: 'assets/avaliacoes/ronaldo_antes.jpeg',
-    fotoDepois: 'assets/avaliacoes/ronaldo_depois.jpeg',
-  },
-]
+import { depoimentos } from '@/data/depoimentos.js'
 
 export default function Depoimentos() {
+  const destaques = depoimentos.slice(0, 3)
+
   return (
     <section id="depoimentos">
       <div className="wrap">
@@ -68,7 +13,7 @@ export default function Depoimentos() {
           <h2>Evoluções reais do Team Siqueira</h2>
         </div>
         <div className="depo-grid">
-          {depoimentos.map((d) => (
+          {destaques.map((d) => (
             <div className="depo" key={d.nome}>
               <BeforeAfter antes={d.fotoAntes} depois={d.fotoDepois} nome={d.nome} />
               <div className="depo-result">{d.resultado}</div>
@@ -79,6 +24,9 @@ export default function Depoimentos() {
               </div>
             </div>
           ))}
+        </div>
+        <div className="depo-cta">
+          <Link href="/depoimentos" className="depo-ver-mais">Ver todos os depoimentos ({depoimentos.length}) →</Link>
         </div>
       </div>
     </section>

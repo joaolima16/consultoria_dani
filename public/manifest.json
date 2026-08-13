@@ -1,0 +1,24 @@
+{
+  "name": "Team Siqueira - Consultoria Fitness",
+  "short_name": "Team Siqueira",
+  "description": "Consultoria fitness online e presencial do fisiculturista Daniel Siqueira",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d0c0a",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/file.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/file.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
