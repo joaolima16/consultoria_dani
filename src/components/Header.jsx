@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const menuItems = [
   { href: '/#inicio', label: 'Início', icon: '🏠' },
@@ -58,7 +59,7 @@ export default function Header() {
       <header className={scrolled ? 'scrolled' : ''}>
         <nav className="wrap" role="navigation" aria-label="Menu principal">
           <Link href="/#inicio" className="logo" aria-label="Team Siqueira - Início">
-            <img src="/file.png" alt="" className="logo-img" aria-hidden="true" />
+            <Image src="/file.png" alt="" width={40} height={40} className="logo-img" aria-hidden="true" priority />
             <span className="logo-text">TEAM <span>SIQUEIRA</span></span>
           </Link>
           <Link href="/#planos" className="nav-cta" onClick={fechar}>Quero começar</Link>
@@ -91,7 +92,7 @@ export default function Header() {
       >
         <div className="chat-menu-header">
           <div className="chat-menu-avatar">
-            <img src="/file.png" alt="" />
+            <Image src="/file.png" alt="Team Siqueira" width={44} height={44} />
           </div>
           <div className="chat-menu-info">
             <span className="chat-menu-name">Team Siqueira</span>

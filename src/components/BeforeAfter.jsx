@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState } from 'react'
+import Image from 'next/image'
 
 export default function BeforeAfter({ antes, depois, nome }) {
   const [pos, setPos] = useState(50)
@@ -42,15 +43,13 @@ export default function BeforeAfter({ antes, depois, nome }) {
       aria-valuemin={0}
       aria-valuemax={100}
     >
-      <img className="ba-img ba-depois" src={depois} alt={`Depois - ${nome}`} draggable={false} loading="lazy" />
-      <img
-        className="ba-img ba-antes"
-        src={antes}
-        alt={`Antes - ${nome}`}
-        draggable={false}
-        loading="lazy"
+      <Image className="ba-img ba-depois" src={depois} alt={`Depois - ${nome}`} fill sizes="(max-width: 860px) 100vw, 33vw" draggable={false} />
+      <div
+        className="ba-img ba-antes-wrapper"
         style={{ clipPath: `inset(0 ${100 - pos}% 0 0)` }}
-      />
+      >
+        <Image className="ba-img ba-antes" src={antes} alt={`Antes - ${nome}`} fill sizes="(max-width: 860px) 100vw, 33vw" draggable={false} />
+      </div>
       <span className="ba-tag ba-tag-antes">Antes</span>
       <span className="ba-tag ba-tag-depois">Depois</span>
       <div className="ba-handle" style={{ left: `${pos}%` }}>

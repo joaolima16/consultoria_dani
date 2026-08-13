@@ -63,9 +63,15 @@ export const metadata = {
     images: ['/file.png'],
   },
   icons: {
-    icon: '/file.png',
-    shortcut: '/file.png',
-    apple: '/file.png',
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+    shortcut: '/favicon.ico',
   },
   manifest: '/manifest.json',
 }
@@ -84,6 +90,11 @@ export default function RootLayout({ children }) {
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Team Siqueira" />
+        <meta name="application-name" content="Team Siqueira" />
+        <meta name="msapplication-TileColor" content="#1e3a8a" />
+        <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
       <body>
         <a href="#main-content" className="skip-link">Pular para o conteúdo principal</a>

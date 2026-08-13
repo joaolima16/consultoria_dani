@@ -64,7 +64,7 @@ header.scrolled{
 }
 nav.wrap{display:flex; align-items:center; justify-content:space-between;}
 .logo{display:flex; align-items:center; gap:12px; font-family:'Bebas Neue', sans-serif; font-size:24px; letter-spacing:0.08em;}
-.logo-img{height:40px; width:auto; border-radius:6px; transition:transform 0.3s var(--ease);}
+.logo-img{height:40px; width:auto !important; border-radius:6px; transition:transform 0.3s var(--ease); position:relative !important;}
 .logo:hover .logo-img{transform:scale(1.06);}
 .logo-text span{color:var(--gold-bright); transition:color 0.3s var(--ease);}
 .logo:hover .logo-text span{color:var(--gold);}
@@ -129,7 +129,7 @@ nav.wrap{display:flex; align-items:center; justify-content:space-between;}
   width:44px; height:44px; border-radius:50%;
   background:var(--bg); overflow:hidden;
   border:2px solid rgba(255,255,255,0.2);
-  flex-shrink:0;
+  flex-shrink:0; position:relative;
 }
 .chat-menu-avatar img{width:100%; height:100%; object-fit:cover;}
 .chat-menu-info{display:flex; flex-direction:column; flex:1;}
@@ -287,6 +287,7 @@ section{padding:110px 0;}
   border-radius:20px; overflow:hidden; border:1px solid var(--card-border);
   aspect-ratio:4/5; background:var(--card-bg); width:100%;
   transition:transform 0.4s var(--ease), border-color 0.3s, box-shadow 0.4s;
+  position:relative;
 }
 .sobre-photo-inner img{width:100%; height:100%; object-fit:cover; object-position:top center; display:block;}
 .sobre-photo:hover .sobre-photo-inner{
@@ -392,6 +393,8 @@ section{padding:110px 0;}
   background:var(--bg-2);
 }
 .ba-img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:top center; pointer-events:none;}
+.ba-img img{object-fit:cover; object-position:top center;}
+.ba-antes-wrapper{z-index:2;}
 .ba-antes{z-index:2;}
 .ba-depois{z-index:1;}
 .ba-tag{

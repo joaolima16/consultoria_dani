@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Sobre() {
   return (
     <section id="sobre">
@@ -5,12 +7,12 @@ export default function Sobre() {
         <div className="sobre-left">
           <div className="sobre-photo">
             <div className="sobre-photo-inner">
-              <img
+              <Image
                 src="/assets/dani.jpeg"
                 alt="Daniel Siqueira, treinador e ex-atleta de fisiculturismo"
-                loading="lazy"
-                width="420"
-                height="525"
+                width={420}
+                height={525}
+                sizes="(max-width: 860px) 340px, 420px"
               />
             </div>
             <div className="sobre-badge">
