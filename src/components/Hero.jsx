@@ -9,8 +9,8 @@ export default function Hero() {
     <section id="inicio" className="hero">
       <div className="wrap">
         <div className="hero-eyebrow">Consultoria presencial &amp; online</div>
-        <h1>Resultados reais começam com a <em>Estratégia certa</em></h1>
-        <p className="hero-sub">Treinamento personalizado baseado em ciência, experiência prática e na vivência de quem alcançou a alta performance, sempre respeitando a individualidade de cada aluno.</p>
+        <h1>Seu treino precisa de estratégia.<em>Seu resultado também</em></h1>
+        <p className="hero-sub">Consultoria personalizada de treinamento para quem busca evolução com método, acompanhamento e ajustes de acordo com sua rotina</p>
         <div className="hero-actions">
           <a href="#planos" className="btn-primary">Quero começar</a>
           <a href="#sobre" className="hero-metric-link">conheça o método ↓</a>

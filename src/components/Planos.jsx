@@ -19,12 +19,14 @@ const planos = [
     id: 'premium',
     nome: 'Plano Silver 🥈',
     tipo: 'Consultoria VIP',
+    destaque: true,
+
     preco: 249,
     desc: 'Acompanhamento próximo e correção de execução.',
     periodo: 'Masculino(12 Semanas) /  Feminino (14 Semanas)',
     itens: [
       'Tudo do Plano Bronze',
-      'Suporte via WhatsApp com respostas rápidas',
+      'Suporte via WhatsApp',
       '2 Montagens de treino',
     ],
   },
@@ -32,13 +34,12 @@ const planos = [
     id: 'Vip Premium',
     nome: 'Plano Gold 🥇',
     tipo: 'Consultoria VIP Dedicada ',
-    destaque: true,
-    preco: 349,
+    preco: 379,
     desc: 'Acompanhamento próximo e correção de execução.',
     periodo: 'Masculino(18 Semanas) /  Feminino (21 Semanas)',
     itens: [
       'Tudo do Plano Silver',
-      'Suporte via WhatsApp com respostas rápidas',
+      'Suporte via WhatsApp',
       '3 Montagens de treino',
       'Periodo de acompanhamento estendido',
     ],
@@ -51,7 +52,7 @@ export default function Planos({ onEscolherPlano }) {
       <div className="wrap">
         <div className="sec-head">
           <div className="sec-label">Planos</div>
-          <h2>Escolha o seu nível de compromisso</h2>
+          <h2>Escolha o acompanhamento ideal para o seu objetivo </h2>
           <p>Três caminhos. Um objetivo: resultado real e sustentável.</p>
         </div>
         <div className="planos-grid">
@@ -61,12 +62,12 @@ export default function Planos({ onEscolherPlano }) {
               <div className="plano-nome">{p.tipo}</div>
               <div className="plano-tipo">{p.nome}</div>
               <div className="plano-periodo">{p.periodo}</div>
-              <div className="plano-preco">R$ {p.preco}<span>/mês</span></div>
+              <div className="plano-preco">R$ {p.preco}<span> a cada 6 semanas</span></div>
               <ul className="plano-lista">
                 {p.itens.map((item) => <li key={item}>{item}</li>)}
               </ul>
               <a
-                href={montarLinkWhatsapp(`Olá! Quero assinar o ${p.nome} (R$ ${p.preco}/mês) do Team Siqueira.`)}
+                href={montarLinkWhatsapp(`Olá! Quero começar meu acompanhamento pelo Plano ${p.nome} (R$ ${p.preco} a cada 6 semanas) do Team Siqueira.`)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="plano-btn"
