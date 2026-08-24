@@ -9,6 +9,14 @@ export const depoimentos = [
   },
   {
     iniciais: 'T',
+    nome: 'Tamiris Cezarani',
+    resultado: '-25kg',
+    quote: 'O que mais mudou foi minha cabeça. Aprendi a comer bem e a treinar com propósito, não só correndo atrás de número.',
+    fotoAntes: '/assets/avaliacoes/tamiris_antes.jpeg',
+    fotoDepois: '/assets/avaliacoes/tamiris_depois.jpeg',
+  },
+  {
+    iniciais: 'T',
     nome: 'Taina Vilela',
     resultado: '-56kg em 12 meses',
     quote: 'Nunca tinha conseguido resultado assim. O treino faz total sentido pra minha rotina de pai e trabalho.',
@@ -23,6 +31,14 @@ export const depoimentos = [
     fotoAntes: '/assets/avaliacoes/junior_antes.jpeg',
     fotoDepois: '/assets/avaliacoes/junior_depois.jpeg',
   },
+    {
+    iniciais: 'L',
+    nome: 'Lucineia Borges',
+    resultado: '-14kg',
+    quote: 'Depois dos 40 achei que não ia conseguir mais. O acompanhamento próximo fez toda diferença para eu manter a consistência.',
+    fotoAntes: '/assets/avaliacoes/lucineia_antes.jpeg',
+    fotoDepois: '/assets/avaliacoes/lucineia_depois.jpeg',
+  },
   {
     iniciais: 'T',
     nome: 'Tainara Amianti',
@@ -31,22 +47,7 @@ export const depoimentos = [
     fotoAntes: '/assets/avaliacoes/tainara_antes.jpeg',
     fotoDepois: '/assets/avaliacoes/tainara_depois.jpeg',
   },
-  {
-    iniciais: 'T',
-    nome: 'Tamiris Cezarani',
-    resultado: '-25kg',
-    quote: 'O que mais mudou foi minha cabeça. Aprendi a comer bem e a treinar com propósito, não só correndo atrás de número.',
-    fotoAntes: '/assets/avaliacoes/tamiris_antes.jpeg',
-    fotoDepois: '/assets/avaliacoes/tamiris_depois.jpeg',
-  },
-  {
-    iniciais: 'L',
-    nome: 'Lucineia Borges',
-    resultado: '-14kg',
-    quote: 'Depois dos 40 achei que não ia conseguir mais. O acompanhamento próximo fez toda diferença para eu manter a consistência.',
-    fotoAntes: '/assets/avaliacoes/lucineia_antes.jpeg',
-    fotoDepois: '/assets/avaliacoes/lucineia_depois.jpeg',
-  },
+
   {
     iniciais: 'R',
     nome: 'Ronaldo',
