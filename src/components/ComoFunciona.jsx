@@ -7,7 +7,7 @@ const passos = [
   {
     num: '02',
     titulo: 'Escolha do plano',
-    texto: 'pós definir o melhor plano para você, iniciamos o processo de acompanhamento.',
+    texto: 'Após definir o melhor plano para você, iniciamos o processo de acompanhamento.',
   },
   {
     num: '03',

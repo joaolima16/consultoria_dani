@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <section id="inicio" className="hero">
       <div className="wrap">
-        <div className="hero-eyebrow">Consultoria presencial &amp; online</div>
+        <div className="hero-eyebrow">Treinamento presencial e consultoria online</div>
         <h1>Seu treino precisa de estratégia.<em>Seu resultado também</em></h1>
         <p className="hero-sub">Consultoria personalizada de treinamento para quem busca evolução com método, acompanhamento e ajustes de acordo com sua rotina</p>
         <div className="hero-actions">

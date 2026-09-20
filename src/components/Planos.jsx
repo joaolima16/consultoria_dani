@@ -7,7 +7,7 @@ const planos = [
     tipo: 'Consultoria',
     preco: 149,
     desc: 'Foco total em treino individualizado.',
-    periodo: 'Masculino(6 semanas) /  Feminino (7 semanas)',
+    periodo: '6 semanas',
     itens: [
       'Avaliação inicial',
       'Treino individualizado',
@@ -23,7 +23,7 @@ const planos = [
 
     preco: 249,
     desc: 'Acompanhamento próximo e correção de execução.',
-    periodo: 'Masculino(12 Semanas) /  Feminino (14 Semanas)',
+    periodo: '12 semanas',
     itens: [
       'Tudo do Plano Bronze',
       'Suporte via WhatsApp',
@@ -36,7 +36,7 @@ const planos = [
     tipo: 'Consultoria VIP Dedicada ',
     preco: 379,
     desc: 'Acompanhamento próximo e correção de execução.',
-    periodo: 'Masculino(18 Semanas) /  Feminino (21 Semanas)',
+    periodo: '18 semanas',
     itens: [
       'Tudo do Plano Silver',
       'Suporte via WhatsApp',
