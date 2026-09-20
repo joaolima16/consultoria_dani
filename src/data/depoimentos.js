@@ -35,7 +35,7 @@ export const depoimentos = [
     iniciais: 'L',
     nome: 'Lucineia Borges',
     resultado: '-14kg',
-    quote: 'Depois dos 40 achei que não ia conseguir mais. O acompanhamento próximo fez toda diferença para eu manter a consistência.',
+    quote: 'Não foi sobre emagrecer rápido, foi sobre não desistir. Cada treino me provou que eu era mais forte do que pensava.',
     fotoAntes: '/assets/avaliacoes/lucineia_antes.jpeg',
     fotoDepois: '/assets/avaliacoes/lucineia_depois.jpeg',
   },
